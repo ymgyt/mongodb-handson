@@ -18,6 +18,5 @@ Usage
    # connect to mongo
    $ mongo localhost:27018
 
-
    # connect to initialized database
-   mongo localhost:27018/tests -u gopher -psecret
+   $ mongo localhost:27018/tests -u gopher -psecret
