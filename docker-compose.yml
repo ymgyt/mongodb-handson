@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  mongo-primary:
+    build:
+      context: ./
+      dockerfile: Dockerfile_primary
+    ports:
+      - 27018:27018

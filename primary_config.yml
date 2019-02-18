@@ -1,0 +1,13 @@
+systemLog:
+  # If yout don not specify destination , mongo sends all log to standard output.
+  # destination: file
+  timeStampFormat: "iso8601-utc"
+storage:
+  journal:
+    enabled: true
+net:
+  port: 27018
+  bindIpAll: true
+
+# security:
+#   authorization: enabled

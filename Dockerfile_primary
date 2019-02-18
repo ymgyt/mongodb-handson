@@ -1,0 +1,8 @@
+FROM mongo:4.0.6
+
+COPY ./primary_config.yml /etc/custom-mongod.conf
+COPY ./init_primary.js /docker-entrypoint-initdb.d/a_init_primary.js
+
+EXPOSE 27018
+
+CMD ["mongod", "--config", "/etc/custom-mongod.conf"]
